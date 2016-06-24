@@ -1,0 +1,30 @@
+.input {
+  font-family: $norm-font;
+  color: $mid-grey;
+  font-size: .875rem;
+  padding: .5rem 0 .5rem .5rem;
+  width: 18rem;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid $light-grey;
+  background: white;
+  transition: all .125s ease-in;
+  display: block;
+  &:hover {
+    border-color: $grey;
+    cursor: text;
+  }
+  &:focus {
+    outline-color: transparent;
+    outline-style: none;
+    border-color: $blue;
+    background: white;
+    color: $dark-grey;
+  }
+  &:valid {
+    color: $dark-grey;
+  }
+  &:focus::-webkit-input-placeholder {
+    color: $light-grey;
+  }
+}
