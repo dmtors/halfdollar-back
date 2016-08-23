@@ -1,30 +1,125 @@
+@import "global.scss";
+
 .input {
-  font-family: $norm-font;
-  color: $mid-grey;
-  font-size: .875rem;
-  padding: .5rem 0 .5rem .5rem;
-  width: 18rem;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 1px solid $light-grey;
-  background: white;
-  transition: all .125s ease-in;
-  display: block;
-  &:hover {
-    border-color: $grey;
-    cursor: text;
-  }
-  &:focus {
-    outline-color: transparent;
-    outline-style: none;
-    border-color: $blue;
-    background: white;
-    color: $dark-grey;
-  }
-  &:valid {
-    color: $dark-grey;
-  }
-  &:focus::-webkit-input-placeholder {
-    color: $light-grey;
-  }
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    transition: all .235s ease-in-out;
+    display: block;
+    &:hover {
+        background-color: $yellow;
+        cursor: text;
+    }
+    &:focus {
+        transition: none;
+        outline-color: transparent;
+        outline-style: none;
+        background-color: darken($yellow, 5%);
+    }
+}
+
+.input-nickname {
+    text-align: left;
+    color: $grey3;
+    width: calc(65% - 8px);
+    &:valid {
+        color: $grey3;
+    }
+    &::-webkit-input-placeholder {
+        transition: all .235s ease-in-out;
+        color: lighten($grey3, 40%);
+    }
+    &:focus::-webkit-input-placeholder {
+        transition: none;
+        color: darken($yellow, 45%);
+    }
+}
+
+.input-amount {
+    text-align: right;
+    color: $blue;
+    width: 35%;
+    &:valid {
+        color: $blue;
+    }
+    &::-webkit-input-placeholder {
+        transition: all .235s ease-in-out;
+        color: lighten($blue, 20%);
+    }
+    &:focus::-webkit-input-placeholder {
+        transition: none;
+        color: darken($yellow, 45%);
+    }
+}
+
+.savings-total, .static {
+    .input-amount {
+        width: 55%;
+        color: $white;
+        &:hover {
+            background-color: darken($blue, 15%);
+        }
+        &:focus {
+            background-color: darken($blue, 20%);
+        }
+        &:valid {
+            color: $white;
+        }
+        &::-webkit-input-placeholder {
+            transition: all .235s ease-in-out;
+            color: lighten($blue, 20%);
+        }
+        &:focus::-webkit-input-placeholder {
+            transition: none;
+            color: $blue;
+        }
+    }
+}
+
+.change-name {
+    .input-amount {
+        color: $grey3;
+        width: 55%;
+        &:valid {
+            color: $grey3;
+        }
+        &::-webkit-input-placeholder {
+            transition: all .235s ease-in-out;
+            color: lighten($grey3, 40%);
+        }
+        &:focus::-webkit-input-placeholder {
+            transition: none;
+            color: darken($yellow, 45%);
+        }
+    }
+}
+
+.savings-goal {
+    .input-amount {
+        color: $white;
+        width: 55%;
+        &:hover {
+            background-color: darken($grey2, 15%);
+        }
+        &:focus {
+            background-color: darken($grey2, 20%);
+        }
+        &:valid {
+            color: $white;
+        }
+        &::-webkit-input-placeholder {
+            transition: all .235s ease-in-out;
+            color: lighten($grey2, 20%);
+        }
+        &:focus::-webkit-input-placeholder {
+            transition: none;
+            color: $grey2;
+        }
+    }
 }

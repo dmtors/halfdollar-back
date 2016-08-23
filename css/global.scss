@@ -1,17 +1,13 @@
 $norm-font: 'MaisonNeueNormal', sans-serif;
 $bold-font: 'MaisonNeueBold', sans-serif;
-$button-font: 'MaisonNeueMono', monospace;
-$white: #ffffff;
-$lightest-grey: #f4f8fd;
-$light-grey: #dce6ef;
-$grey: #919fab;
-$blue-grey: #b8c8d5;
-$mid-grey: #7f8a93;
-$dark-grey: #42484e;
-$blue: #117fff;
-$green: #3bcc9d;
-$copper: #cc8e3b;
-$red: #d95c27;
+$mono-font: 'MaisonNeueMono', monospace;
+$white: #FFFFFF;
+$grey1: #EAF0F4;
+$grey2: #768898;
+$grey3: #323B43;
+$blue: #3778FF;
+$yellow: #FFF1CC;
+$red: #D95C27;
 
 @font-face {
   font-family: 'MaisonNeueNormal';
@@ -37,11 +33,17 @@ $red: #d95c27;
        url('../fonts/maison-neue-mono.ttf') format('truetype');
 }
 
-body {
-  background: $white;
-  margin: 0;
-  font-family: $norm-font;
-  font-weight: normal;
-  font-size: 1rem;
-  color: $dark-grey;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }

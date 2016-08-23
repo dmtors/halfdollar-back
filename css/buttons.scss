@@ -1,66 +1,64 @@
+@import "global.scss";
+
 .button {
-  font-family: $button-font;
-  font-size: .75rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  transition: all .125s ease-in;
+  transition: all .235s ease-in-out;
   display: block;
+  padding: 8px 16px;
   &:focus {
     outline-style: none;
   }
 }
 
 .self {
-  padding: .5rem 1rem .5rem 1rem;
+  padding: 8px 16px;
 }
 
 .full {
-  width: 18rem;
-}
-
-.half {
-  width: 17rem;
+  width: 100%;
 }
 
 .fill {
   color: white;
   background: $blue;
   &:hover {
-    background: darken( $blue, 10% );
-    border-color: darken( $blue, 10% );
+    background: darken( $blue, 5% );
+    border-color: darken( $blue, 5% );
   }
   &:active {
-    background: darken( $blue, 20% );
-    border-color: darken( $blue, 20% );
+    transition: none;
+    background: darken( $blue, 10% );
+    border-color: darken( $blue, 10% );
   }
 }
 
 .ghost {
-  color: $blue;
-  background: none;
-  border-color: 1px solid $blue;
-  &:hover {
-    background: $blue;
-    border-color: $blue;
-  }
-  &:active {
-    background: darken( $blue, 10% );
-    border-color: darken( $blue, 10% );
-  }
+    color: $blue;
+    background: none;
+    border: 1px solid $blue;
+    &:hover {
+        background: $blue;
+        color: $white;
+        // background: lighten($blue, 35%);
+    }
+    &:active {
+        transition: none;
+        background: darken($blue, 15%);
+        border-color: darken($blue, 15%);
+        color: $white;
+        // background: lighten($blue, 30%);
+    }
 }
 
 .link {
     color: $blue;
-    font-family: $button-font;
-    font-size: .825rem;
+    font-family: $norm-font;
     text-decoration: none;
     padding-bottom: 2px;
-    border-bottom: 1px solid white;
-    transition: all .125s ease;
+    border-bottom: 1px solid $white;
+    transition: all .235s ease-in-out;
     &:hover {
       border-color: $blue;
     }

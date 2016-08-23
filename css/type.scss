@@ -1,0 +1,92 @@
+@import "global.scss";
+
+.body {
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.large-body {
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 12px;
+}
+
+.small-body {
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.button {
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}
+
+.headline {
+    // text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    // letter-spacing: 2px;
+    text-align: center;
+}
+
+.amount {
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+    // font-weight: bold;
+}
+
+.primary-heading {
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+}
+
+.grey1 {
+    color: $grey1;
+}
+
+.grey2 {
+    color: $grey2;
+}
+
+.grey3 {
+    color: $grey3;
+}
+
+.blue {
+    color: $blue;
+}
+
+.white {
+    color: $white;
+}
